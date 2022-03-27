@@ -47,7 +47,7 @@ class _TodoGroupsPageState
           itemCount: controller.groups.length,
           itemBuilder: (_, index) {
             final todoGroup = controller.groups[index];
-            return Container(
+            return /*Container(
               padding: const EdgeInsets.all(24),
               child: Row(
                 children: [
@@ -72,12 +72,11 @@ class _TodoGroupsPageState
                     ],
                   ),
                 ],
-              ),
-              /*child: ListTile(
+              ),*/
+               ListTile(
                 title: Text('${todoGroup.title}: ${todoGroup.createdAt.toString()}'),
                 subtitle: Text(todoGroup.subtitle),
                 trailing: _showPopupMenu(indexGroup: index, todoGroup: todoGroup),
-              ),*/
             );
           },
         );
